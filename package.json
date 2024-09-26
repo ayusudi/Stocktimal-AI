@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "3d-react-carousal": "^5.0.0",
     "flowbite": "^2.5.1",
     "flowbite-react": "^0.10.1",
     "next": "14.2.13",
