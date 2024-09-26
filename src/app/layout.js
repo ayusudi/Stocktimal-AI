@@ -1,5 +1,5 @@
 import "./globals.css";
-import Link from "next/link";
+import Navbar from "@/components/navbar"
 import { Inter, Iceland, Instrument_Sans } from 'next/font/google';
 
 // Import the fonts with CSS variable settings
@@ -18,19 +18,20 @@ export default function RootLayout({ children }) {
         className={`${inter.className} ${iceland.variable} ${instrument.variable} antialiased min-h-screen bg-black font-inter`}
       >
         {/* Text using Iceland font */}
-        <div className="font-iceland text-[21px] py-1.5 font-semibold text-center text-white">
-          Stocktimal
-        </div>
+        <Navbar />
 
-        <nav className="text-white flex justify-between items-center px-8 py-4 border-b border-gray-600 border-b-[1px] border-white">
-          <ul className="flex w-full max-w-[1440px] m-auto items-center justify-center ">
+        {/* <nav className="text-white flex flex-col justify-between items-center px-8 py-2 border-b border-gray-600 border-b-[1px] border-white">
+          <div className="font-iceland text-[21px] pb-4 font-semibold text-center text-white">
+            Stocktimal
+          </div>
+          <ul className="flex w-full max-w-[1440px] m-auto items-center justify-center py-1.5">
             <Link className="hover:underline cursor-pointer flex-1 border-r-[1px] border-white text-center" href="/">Home</Link>
             <Link className="hover:underline cursor-pointer flex-1 border-r-[1px] border-white text-center" href="/pricing">Pricing</Link>
             <Link className="hover:underline cursor-pointer flex-1 border-r-[1px] border-white text-center" href="/customer-data">Customer Data</Link>
             <Link className="hover:underline cursor-pointer flex-1 border-r-[1px] border-white text-center" href="/inventory-management">Inventory Management</Link>
             <Link className="hover:underline cursor-pointer flex-1 text-center" href="/cost-saving-tips">Cost Saving Tips</Link>
           </ul>
-        </nav>
+        </nav> */}
 
         {/* Child components */}
         {children}
