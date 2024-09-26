@@ -7,9 +7,10 @@ module.exports = {
   ],
   theme: {
     extend: {
-      colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+      fontFamily: {
+        inter: ['var(--font-inter)'],
+        iceland: ['var(--font-iceland)', 'cursive'],
+        instrument: ['var(--font-instrument)']
       },
     },
   },
