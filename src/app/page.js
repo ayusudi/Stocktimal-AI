@@ -24,12 +24,9 @@ function App() {
         </p>
       </header>
 
-      <section className="grid grid-cols-1 md:grid-cols-2 ">
-        <div className="relative h-auto" style={{ aspectRatio: "1075/754" }} >
-          <Image src="/image1.png" fill alt='image1' />
-        </div>
-        <div className="relative h-auto" style={{ aspectRatio: "1075/754" }} >
-          <Image src="/image2.png" fill alt='image2' />
+      <section className="">
+        <div className="relative h-auto w-full" style={{ aspectRatio: "2151/754" }} >
+          <Image src="/image0.png" fill alt='image1' />
         </div>
       </section>
 

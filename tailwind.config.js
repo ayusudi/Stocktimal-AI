@@ -9,6 +9,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      backgroundColor: {
+        black: "#2A2A2B"
+      },
       fontFamily: {
         inter: ['var(--font-inter)'],
         iceland: ['var(--font-iceland)', 'cursive'],
